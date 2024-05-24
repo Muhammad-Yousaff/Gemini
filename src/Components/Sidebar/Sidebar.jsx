@@ -8,11 +8,11 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="top">
-        <img onClick={()=>setExtended(prev=!prev)}
+        <img 
           className='menu' 
           src={assets.menu_icon} 
           alt="menu" 
-          onClick={() => setExtended(!extended)} 
+          onClick={() => setExtended(prev => !prev)} 
         />
 
         <div className="new_chat">
